@@ -1,0 +1,80 @@
+body {
+  background: lightyellow;
+}
+
+h1, h2{
+  margin: 0;
+}
+
+.notes-list-container {
+  padding: 10px;
+}
+
+.notes-list {
+  margin-bottom: 10px;
+}
+
+.note-item {
+  margin-top: 2px;
+  border: 1px solid black;
+}
+
+.note-item > a {
+  display: block;
+  background: yellow;
+  color: blue;
+  text-decoration: none;
+}
+
+.note-item > a + div{
+  display:none;
+  border-top: 1px solid black;
+  padding: 5px;
+}
+
+.note-item > a:before {
+  content: "+";
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.note-item > a.collapse:before {
+  content: "-";
+}
+
+.note-item > a.collapse + div{
+  display:block;
+}
+
+.note-editor {
+  display: none;
+  padding: 10px;
+}
+
+.titulo,
+.comentario{
+  width: 100%;
+}
+
+.note-editor p{
+  font-size: 14px;
+  color: grey;
+  margin: 0 0 0 5px;
+}
+
+.footer {
+  padding:5px;
+  font-style:italic;
+  font-size:small;
+  text-align: center;
+}
+
+.header {
+  padding: 20px 10px;
+  color: #666;
+  text-align: center;
+}
+
+.header h1{
+  margin-bottom:10px;
+}
